@@ -35,22 +35,18 @@
             box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
         }
 
-   
-        #top_list{
-            color:white;
-            margin-right:10px;
-        }
-
-
-       .services-heading{
+       .heading{
            text-align:center;
+           font-family:'Open Sans';
            color:#3F9A93; 
            font-weight:700;
-           line-height:10px;
-
        }
   
     
+       .srevices{
+           background-color:#cccccc;
+       }
+
        .services-text{
            text-align:left;
             font-family:'Open Sans';
@@ -63,110 +59,50 @@
            text-align:justify;
       
        }
-       .about-heading{
-            text-align:center;
-            font-family:'Open Sans';
-           color:#3F9A93; 
-           font-weight:700;
-           line-height:10px;
-       }
 
-       .about{
-           background-color:rgba(209, 204, 204, 0.20);
-
-       }
-
-       .about-text{
-           text-align:justify;
-           font-family:'Open Sans';
-           font-size:17px;
-           line-height:34px;
-           margin-left:15%;
-           margin-right:15%;
-       }
-       .about-text-links{
-           text-align:justify;
-           font-family:'Open Sans';
-           font-size:17px;
-           line-height:34px;
-           margin-left:17%;
-           margin-right:17%;
-       }
-       .about-sum{
-           text-align:center;
-           font-family:'Open Sans';
-           font-size:16px;
-       }
-
-       .about-sum-text1{
-           text-align:center;
-           font-family:'Open Sans';
-           font-size:14px;
-           list-style-type:decimal;
-           line-height:34px;
-       }
-
-       .about-sum-text2{
-           text-align:center;
-           font-family:'Open Sans';
-           font-size:14px;
-       }
-
-       .divider-div{
-    height:310px;
-    width: 0.33%;
+   
+       .divider-div2{
+           height:50px;
+    width: 0.22%;
     padding: 0px;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    background-color: rgba(0,0,0,0.2);
+    background-color:#000000;
        }
 
-    .contactus-head{
-          text-align:center;
-           color:#3F9A93; 
-           font-weight:700;
-           line-height:20px;
-    }
-
+  
    .contactus-text{
-       background-color:#000000;
-       color:#ffffff;
+       
        font-family:'Open Sans';
-       text-align:justify;
+       text-align:center;
    }
 
    .contactus-info{
-       margin-left:20%;
        font-size:18px;
        font-family:'Open Sans';
-       text-align:justify;
+       text-align:center;
+       margin-bottom:3%;
+   }
+
+   .box-position{
+       margin-left:22%;
+      
    }
 
    .btn-color{
        background-color:#f2cf0b;
+       margin-left:2%;
    }
-  
-    .div{
-        display:block;
 
-    }
+   .links{
+       text-align:center;
+           font-family:'Open Sans';
+           font-size:16px;
+   }
 
-    .message{
-        margin-right:18%;
-    }
-
-    .navigationbottom{
-        
-        font-family : 'Open Sans';
-        background-color : #137d75;
-        font-size: 18px;
-        height:50px;
-        
-    }
-
-    </style>
+ </style>
     
 </head>
 <body>
@@ -182,10 +118,10 @@
                                 <a id="hme" href="#home" style="margin-right:46px;color:#ffffff;">HOME</a>
                             </li>
                             <li>
-                                <a id="serv" href="#services" style="margin-right:46px;color:#ffffff;">SERVICE</a>
+                                <a id="serv" href="whyus.html" style="margin-right:46px;color:#ffffff;">WHY US</a>
                             </li>
                             <li>
-                                <a id="abtus" href="#about-us" style="margin-right:46px;color:#ffffff;">ABOUT US</a>
+                                <a id="abtus" href="careers.html" style="margin-right:46px;color:#ffffff;">CAREERS</a>
                             </li>
                             <li>
                                 <a id="cntus" href="#contact-us" style="margin-right:46px;color:#ffffff;">CONTACT US</a>
@@ -197,15 +133,32 @@
 
     <a id="home"></a>
     <div class="container-fluid" id="home-page" style="max-height:665px;">
-        <center><img src="Cover.jpg" class="img-responsive" id="backgroung-image" alt="Cover page" width="665" height="200"/></center>
+        <center><img src="Hero-image.jpg" class="img-responsive" id="backgroung-image" alt="Cover page" width="665" height="600"/></center>
+        <div class="row">
+            <div class="col-sm-3" style="margin-left:12%">
+                <h4 class="links"><b><a href="#">Our Services</a></b></h4>
+            </div>
+
+            <div class="col-sm-1 divider-div2" id="divider-div-1"></div>
+
+            <div class="col-sm-3">
+                <h4 class="links"><b><a href="YourIndustry.html">You Industry</a></b></h4>
+            </div>
+
+            <div class="col-sm-1 divider-div2" id="divider-div-1"></div>
+
+            <div class="col-sm-3">
+                <h4 class="links"><b><a href="NewsUpdates.html">News & Updates</a></b></h4>
+            </div>
+        </div>
     </div>  
 
-    <a id="services"></a>
-    <div class="row" style="max-height:665px;">
-        <div class="col-md-6">
-            <h2 class="services-heading"><b>SERVICES</b></h2>
+    
+    <div class="row srevices" style="max-height:665px;">
+        <div class="col-sm-6">
+            <h2 class="heading" id="services"><b>SERVICES</b></h2>
             <p style="text-align:center">~~~~~::~~~~~</p>
-            <div class="col-md-11 services-text" id="text-content">
+            <div class="col-sm-11 services-text" id="text-content">
                 <p>
                     Our Strenght lies in our intrinsic belief in the organization's core values, vision
                     and mission. Our dedicated team comprising of skilled and experienced individuals
@@ -214,7 +167,7 @@
                     keeping the client always on priority.
                 </p>
 
-                <div class="col-md-6 pull-left servies-content">
+                <div class="col-sm-6 pull-left servies-content">
                     <h4><b>Customer Care</b></h4>
                     <p>
                         Responsiveness and effective communication
@@ -224,7 +177,7 @@
                         <a href="#">Read More...</a>
                     </p>
                 </div>
-                <div class="col-md-6 pull-right servies-content">
+                <div class="col-sm-6 pull-right servies-content">
                     <h4><b>Direct Response</b></h4>
                     <p>
                         Today's contact centers blend with an 
@@ -235,7 +188,7 @@
                         
                     </p>
                 </div>
-                <div class="col-md-6 pull-left servies-content">
+                <div class="col-sm-6 pull-left servies-content">
                     <h4><b>Rural BPO</b></h4>
                     <p>
                         Our foray into Rural BPO outsourcing
@@ -246,7 +199,7 @@
                     </p>
                 </div>
 
-                <div class="col-md-6 pull-right servies-content">
+                <div class="col-sm-6 pull-right servies-content">
                     <h4><b>Marketing</b></h4>
                     <p>
                         In today's business, the consumer is 
@@ -257,7 +210,7 @@
 
                     </p>
                 </div>
-                <div class="col-md-6 col-md-offset-4 servies-content">
+                <div class="col-sm-6 col-md-offset-4 servies-content">
                     <h4><b>Customer Care</b></h4>
                     <p>
                         Responsiveness and effective communication
@@ -271,149 +224,50 @@
 
          </div>  
          
-         <div class="row">      
-            <div class="col-md-6 " id="img-content">
-                <img src="Cover.jpg" class="img-responsive" id="side-image" alt="Just an image" height="500" width="550"/>
+               
+            <div class="col-sm-6 " id="img-content">
+                <br /><br />
+                <img src="services.jpg" class="img-responsive" id="side-image" alt="Just an image" height="800" width="720"/>
             </div>     
-         </div> 
+          
         </div> 
 
-    <a id="about-us"></a>
-    <div class="about">
-        <br />
-        <h2 class="about-heading"><b>ABOUT US</b></h2>
-        <p style="text-align:center">~~~~~~~::~~~~~~</p>
-
-        <p class="about-text">
-            Leeway provides full-spectrum consulting,technology and business processing outsourcing services. our differentiating model is unique and more centric towards Business
-            Outcomes. Armed with a team of dedicaated, experienced and motivated individuals, with over two decades of successful Outsourcing and Coulsulting experience with the
-            sole intent to make customer service experience delightful.
-        </p>
-
-        <p class="about-text">This diversified, well-trained and motivated talent pool works cohesively and is geared up to deliver solutions based around a mature global delivery model to clients
-        across the Americas, Europe- Middle East-Africa(EMEA) and Asia-Pasific. We are large enough to be resourceful and small enought to be flexible. Our philosophy is to be 
-        highly adaptable in delivering value to the customer in dynamic business scenarios often seen in an ever-changing global environment.</p>
-
-        <p class="about-text">Leeway industry-specific BPO Services provides tailored outsourcing solutions that help clients achieve-regardless of whether they outsource a discrete activity, an 
-        entire business process or an activity that spans multiple functions. Some of the offering we provide our clients include :</p>
-
-        <p>
-            <ul style="list-style-type:disc" class="about-text-links">
-                <li><a href="Banking.html">Banking & Financial Services</a></li>
-                <li><a href="Insurrance.html">Insurance BPO</a></li>
-                <li><a href="Health.html">Healthcare BPO</a></li>
-                <li><a href="Pharmaceuticals.html">Pharmaceuticals</a></li>
-                <li><a href="Manu.html">Manufacturing & Retail</a></li>
-                <li><a href="Ship.html">Shipping & Logistics</a></li>
-                <li><a href="Media.html">Media, Entertaiment & Telecommunication</a></li>
-                <li><a href="Utilities.html">Utilities BPO</a></li>
-                <li><a href="Network.html">Network BPO</a></li>
-                <li><a href="Market.html">Marketing BPO</a></li>
-                <li><a href="Travel.html">Tavel, Logistics and Hospitality</a></li>
-            </ul>
-        </p><br />
-
-        <div class="row">
-            <div class="col-md-2 col-md-offset-3">
-                <h4 class="about-sum"><b>Our Core Values</b></h4>
-                <ul class="about-sum-text1">
-                    <li>Respect for the individual</li>
-                    <li>Clent first</li>
-                    <li>Intigrity and Simplicity</li>
-                    <li>Passion to Perform</li>
-                    <li>Innovate to excel</li>
-                </ul>
-            </div>
-
-            <div class="col-md-1 divider-div" id="divider-div-1"></div>
-
-            <div class="col-md-2">
-                <h4 class="about-sum"><b>Our Vision</b></h4>
-                <p class="about-sum-text2">
-                    We are committed to provide world class services to
-                    our global clients with a vision of achieving customer
-                    delight through our tailor made solutions, people
-                    oriented processes, innovative approach and quality
-                    systems.
-                </p>
-                <p class="about-sum-text2">
-                    We give business a world class transformation
-                    solution that fits like a glove - one that can be
-                    expanded to meet your growing demands, contains
-                    cost and is fully accountable.
-                </p>
-            </div>
-
-            <div class="col-md-1 divider-div" id="divider-div-1"></div>
-
-            <div class="col-md-2">
-                <h4 class="about-sum"><b>Our Mission</b></h4>
-                <p class="about-sum-text2">
-                    Achieve hight quality service delivery levels leading to
-                    Customer Delight. Building highly focused client cetric organization delivering value based service
-                    levels exceeding client expectations.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
     <a id="contact-us"></a>
-    <div class="container-fluid contactus-text margintop">
-        <h2 class="contactus-head"><b>CONTACT US</b></h2>
-        <p style="text-align:center">~~~~~~~::~~~~~~~</p>
-        <div class="row">
-            <div class="col-md-3 pull-left contactus-info">
-                <p>We wolud love to here from you:</p>
+
+    <div class="container-fluid">
+        <div  class="row" style="background-color:#ffffff;">
+            <h2 class="heading"><b>CONTACT US</b></h2>
+            <p style="text-align:center">~~~~~~~::~~~~~~~</p>
+
+            <div class="contactus-info">
+                <p>We would love to here from you:</p>
                 <p>+91-9560452526,</p>
                 <p>+911246455662</p>
                 <p>feedback@leewayeserv.com</p>
             </div>
-            <div class="col-md-3 pull-right message">
-                
-                    <form class="form-inline">
-
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <br /><br />
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email"  />
-                        </div>
-                        <br /><br />
-                        <div class="form-group">
-                            <textarea class="form-control" rows="2" placeholder="Message"></textarea>
-                        </div><br /><br />
-
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-color">Submit</button>
-                        </div>
-                    </form>
-                
-            </div>
-            
         </div>
       
-        <br /><br /><br />
-    </div>
+          <div class="row" style="background-color:#000000;">
+            <form class="form-group contactus-text">
 
-
-    <div class="row">
-        <nav class="navbar-inverse navbar-fixed-bottom navigationbottom">
-            <div class="container-fluid">
-
-                <div>
-                    <ul class="nav navbar-nav">
-                        <li style="margin-left:30px"><a href="whyus.html" style="color:#ffffff;">WHY US</a></li>
-                        <li style="margin-left:30px"><a href="careers.html" style="color:#ffffff;">CAREERS</a></li>
-                        <li style="margin-left:30px"><a href="YourIndustry.html" style="color:#ffffff;">YOUR INDUSTRY</a></li>
-                        <li style="margin-left:30px"><a href="NewsUpdates.html" style="color:#ffffff;">NEWS & UPDATES</a></li>
-
-                    </ul>
+                <div class="form-group col-lg-7 box-position" style="margin-top:50px;">
+                    <input type="text" class="form-control" placeholder="Name" style="text-align:center" />
                 </div>
-            </div>
-        </nav>
-    </div>
+                <br /><br />
+                <div class="form-group col-lg-7 box-position">
+                    <input type="email" class="form-control" placeholder="Email" style="text-align:center" />
+                </div>
+                <br /><br />
+                <div class="form-group col-lg-7 box-position">
+                    <textarea class="form-control" rows="2" placeholder="Message" style="text-align:center"></textarea>
+                </div>
+                <br /><br />
+                <div class="form-group col-lg-7 box-position">
+                    <button type="submit" class="btn btn-color" style="text-align:center">Submit</button>
+                </div>
+            </form>
+        </div>
+        </div>
+      
 </body>
 </html>
