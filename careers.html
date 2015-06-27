@@ -60,24 +60,139 @@
            line-height:10px;
            margin-top:2%;
            margin-bottom:2%;
+           text-transform:uppercase;
     }
 
     .info-sizing{
-        margin-left:16%;
+        margin-left:24%;
     }
 
     #uploadfile{
-        margin-left:38%;
+        margin-left:35%;
     }
-
-   .careers-details{
-       text-align:center;
-
-   }
-
+     
      .btn-color{
        background-color:#f2cf0b;
    }
+
+     .btn-submit{
+         margin-left:40%;
+     }
+
+    .group{
+        position:relative;
+        margin-bottom:45px;
+    }
+
+    input{
+        font-size:18px;
+        font-family:'Open Sans';
+        padding: 10px 10px 10px 10px;
+        display:block;
+        width:600px;
+        border:none;
+        border-bottom: 1px solid #757575;
+    }
+
+    input:focus{
+        outline:none;
+    }
+
+    label{
+        color:#999999;
+        font-family:'Open Sans';
+        font-size:18px;
+        font-weight:normal;
+        position:absolute;
+        pointer-events:none;
+        left:5px;
+        top:10px;
+        transition: 0.3s ease all;
+        -moz-transition:0.3s ease all;
+        -webkit-transition:0.3s ease all;
+    }
+
+    input:focus ~ label, input:valid ~ label{
+        top:-20px;
+        font-size:14px;
+        color:#5264AE;
+    }
+
+    .bar{
+        position:relative;
+        display:block;
+        width:300px;
+    }
+
+    .bar:before, .bar:after{
+        content:'';
+        height:2px;
+        width:0;
+        bottom:1px;
+        position:absolute;
+        background:#5264AE;
+        transition:0.3s ease all;
+        -moz-transition: 0.3s ease all;
+        -webkit-transition:0.3s ease all;
+    }
+
+    .bar:before{
+        left:50%;
+    }
+
+    .bar:after{
+        right:50%;
+    }
+
+    input:focus ~ .bar:before, input:focus ~ .bar:after{
+        width:50%;
+    }
+
+    .highlight{
+        position:absolute;
+        height:60%;
+        width:100px;
+        top:25%;
+        left:0;
+        pointer-events:none;
+        opacity:0.5;
+    }
+
+    input:focus ~ .highlight{
+        -webkit-animation:inputHighlighter 0.4s ease;
+        -moz-animation:inputHighlighter 0.4s ease;
+        animation:inputHighlighter 0.4s ease;
+    }
+
+    @-webkit-keyframes inputHighlighter {
+        from{
+              background:#5264AE;
+        }
+        to{
+            width:0;
+            background:transparent;
+        }
+    }
+
+    @-moz-keyframes inputHighlighter {
+        from{
+              background:#5264AE;
+        }
+        to{
+            width:0;
+            background:transparent;
+        }
+    }
+
+    @keyframes inputHighlighter{
+         from{
+              background:#5264AE;
+        }
+        to{
+            width:0;
+            background:transparent;
+        }
+    }
 
   </style>
 </head>
@@ -113,32 +228,63 @@
         <p class="uimg"><img src="UnderlineDesign.jpg" /></p>
         <p class="careers-info">Fill in the following details & if your skill set matches our requirements, we shall be in touch.</p>
         
-        <form class="careers-details">
-            <div class="form-group col-lg-8 info-sizing">
-                <input type="text" class="form-control" placeholder="NAME" style="text-align:center"/>
+        <form>
+           
+            <div class="group info-sizing">
+                <input type="text" required/>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>NAME</label>
             </div>
-            <div class="form-group col-lg-8 info-sizing">
-                <input type="text" class="form-control" placeholder="MOBILE NO." style="text-align:center" />
+
+            <div class="group info-sizing">
+                <input type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>MOBILE NO.</label>
             </div>
-            <div class="form-group col-lg-8 info-sizing">
-                <input type="text" class="form-control" placeholder="ADDRESS" style="text-align:center" />
+
+            <div class="group info-sizing">
+                <input type="text" required/>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>ADDRESS</label>
             </div>
-            <div class="form-group col-lg-8 info-sizing">
-                <input type="text" class="form-control" placeholder="CITY" style="text-align:center" />
+
+            <div class="group info-sizing">
+                <input type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>CITY</label>
             </div>
-            <div class="form-group col-lg-8 info-sizing">
-                <input type="text" class="form-control" placeholder="EMAIL ADDRESS" style="text-align:center" />
+
+            <div class="group info-sizing">
+                <input type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>EMAIL ID</label>
             </div>
-            <div class="form-group col-lg-8 info-sizing">
-                <input type="text" class="form-control" placeholder="EXPERIENCE" style="text-align:center" />
+            
+            <div class="group info-sizing">
+                <input type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>EXPERIENCE</label>
             </div>
-            <div class="form-group col-lg-8 info-sizing">
-                <input type="text" class="form-control" placeholder="EXPECTED SALARY" style="text-align:center" />
+            
+            <div class="group info-sizing">
+                <input type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>EXPECTED SALARY</label>
             </div>
-            <div class="form-group col-lg-8 info-sizing">
-                <label for="exampleInputFile">UPLOAD RESUME</label><input type="file" id="uploadfile" placeholder="UPLOAD RESUME" name="Upload Resume"/>
+
+            <div class="form-group col-lg-8">
+                <label style="margin-left:36%;">UPLOAD RESUME</label><br /><br />
+                <input type="file" id="uploadfile" placeholder="UPLOAD RESUME" name="Upload Resume"/>
             </div>
-            <div class="form-group col-lg-8 info-sizing">
+
+            <div class="form-group col-lg-8 btn-submit">
                 <button type="submit" class="btn btn-color" style="text-align:center">SUBMIT</button>
             </div>
         </form>
