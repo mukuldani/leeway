@@ -8,5 +8,5 @@ function handleFileSelect(element){
         resumeBase64 = returnObj.target.result;
     };
     fileReader.readAsDataURL(fileObj);
-    type = document.getElementById('uploadfile').files[0].type
+    type = document.getElementById('uploadfile').files[0].type;
 }
