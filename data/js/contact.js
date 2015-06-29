@@ -12,7 +12,7 @@ function contactForm() {
     }
     //for careers page
     if(str.match(/careers/gi)!==null){
-        urlByPart = '/send_resume';
+        urlByPart = '/send_email';
         form = $('#careers-leeway');
     }
     //form sending and response management
