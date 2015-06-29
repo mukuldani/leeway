@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
@@ -9,6 +9,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     <link rel="shortcut icon" href="favicon.ico" />
+    <!--Styles-->
     <style>
         .navbar{
             font-family : 'Open Sans';
@@ -239,6 +240,7 @@
     
 </head>
 <body>
+    <!--Navbar-->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div id="top_nav_div" class="container-fluid">
                 <div class="navbar-hearder pull-left">
@@ -263,7 +265,7 @@
                     </div>
             </div>
         </nav> 
-
+    <!--Home Page-->
     <a id="home"></a>
     <div class="container-fluid" id="home-page" style="max-height:665px;">
         <center><img src="Hero-image.jpg" class="img-responsive" id="backgroung-image" alt="Cover page" width="665" height="600"/></center>
@@ -290,7 +292,7 @@
             </div>
         </div>
     </div>  
-
+    <!--Our Services-->
     <a id="ourservice" style="position:relative;top:-51px;display:block;visibility:hidden;"></a>
     <div class="container-fluid row srevices" style="max-height:665px;">
         <div class="col-sm-6">
@@ -370,10 +372,11 @@
           
         </div> 
 
-
+    <!--Contact us-->
     <a id="contact-us" style="position:relative;top:-51px;display:block;visibility:hidden;"></a>
 
     <div class="container-fluid">
+        <!--contact us details-->
         <div  class="row" style="background-color:#ffffff;">
             <h2 class="heading"><b>CONTACT US</b></h2>
             <p class="uimg"><img src="UnderlineDesign.jpg" /></p>
@@ -385,37 +388,47 @@
                 <p>feedback@leewayeserv.com</p>
             </div>
         </div>
-      
+        <!--Popover for message sending-->
+        <div id="overlay">
+            <div id="popup">
+                <h4 id="sndg-msg-rchus">Sending Message<br/></h4>
+                <img src="/data/img/ajax-loader.GIF" id="loading-indicator-rchus" alt="ajax loader">
+                <div id="reachus_message" class="notice" data-error="There was an error sending the message, please try again." data-success="Message successfully sent!"></div>
+            </div>
+        </div>
+        <!--contact us form-->
           <div class="row" style="background-color:#000000;">
             <form class="contactus-text">
 
                 <div class="group info-sizing">
-                    <input type="text" required />
+                    <input type="text" required id="name" />
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>NAME</label>
                 </div>               
 
                 <div class="group info-sizing">
-                    <input type="text" required />
+                    <input type="text" required id="email" />
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>EMAIL ID</label>
                 </div>
 
                 <div class="group info-sizing">
-                    <input type="text" required />
+                    <input type="text" required id="message"/>
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>MESSAGE</label>
                 </div>
 
                 <div class="form-group col-lg-7 box-position">
-                    <button type="submit" class="btn btn-color" style="text-align:center">Submit</button>
+                    <button type="submit" class="btn btn-color" style="text-align:center" id="submit">Submit</button>
                 </div>
             </form>
         </div>
         </div>
       
 </body>
+    <!--Email sending js-->
+    <script src="js/contact.js" type="text/javascript" async="async" defer="defer"></script>
 </html>
