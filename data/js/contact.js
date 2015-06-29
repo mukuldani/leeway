@@ -1,16 +1,21 @@
 function contactForm() {
     var contactFormHost = 'http://reachus-leeway.herokuapp.com',
-        form = $('#contact-us-leeway'),
+        form = "",
         notice = $('#reachus_message'),
         sendingIndicator = $('#sndg-msg-rchus,#loading-indicator-rchus'),
         str = $(location).attr('pathname'),
         urlByPart = ""; 
+    //for contact page
     if(str.match(/index/gi)!==null){
         urlByPart = '/send_email';
+        form = $('#contact-us-leeway');
     }
-    if(str.match(/index/gi)!==null){
+    //for careers page
+    if(str.match(/careers/gi)!==null){
         urlByPart = '/send_resume';
+        form = $('#careers-leeway');
     }
+    //form sending and response management
     if (form.length) {
         $.ajax({
             type: 'POST',

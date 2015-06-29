@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
@@ -216,7 +216,7 @@
                         <a id="abtus" href="careers.html" style="margin-right:46px;color:#ffffff;">CAREERS</a>
                     </li>
                     <li>
-                        <a id="cntus" href="index.html #contact-us" style="margin-right:46px;color:#ffffff;">CONTACT US</a>
+                        <a id="cntus" href="index.html#contact-us" style="margin-right:46px;color:#ffffff;">CONTACT US</a>
                     </li>
                 </ul>
             </div>
@@ -229,52 +229,52 @@
         <p class="uimg"><img src="UnderlineDesign.jpg" /></p>
         <p class="careers-info">Fill in the following details & if your skill set matches our requirements, we shall be in touch.</p>
         
-        <form>
+        <form method="post" id="careers-leeway">
            
             <div class="group info-sizing">
-                <input type="text" required/>
+                <input type="text" id="name" autofocus required/>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>NAME</label>
             </div>
 
             <div class="group info-sizing">
-                <input type="text" required />
+                <input type="text" id="mobileNo" required />
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>MOBILE NO.</label>
             </div>
 
             <div class="group info-sizing">
-                <input type="text" required/>
+                <input type="text" id="address" required/>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>ADDRESS</label>
             </div>
 
             <div class="group info-sizing">
-                <input type="text" required />
+                <input type="text" id="city" required />
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>CITY</label>
             </div>
 
             <div class="group info-sizing">
-                <input type="text" required />
+                <input type="text" id="email" required />
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>EMAIL ID</label>
             </div>
             
             <div class="group info-sizing">
-                <input type="text" required />
+                <input type="text" id="experience" required />
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>EXPERIENCE</label>
             </div>
             
             <div class="group info-sizing">
-                <input type="text" required />
+                <input type="text" id="salary" required />
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>EXPECTED SALARY</label>
@@ -286,7 +286,7 @@
             </div>
 
             <div class="form-group col-lg-8 btn-submit">
-                <button type="submit" class="btn btn-color" style="text-align:center">SUBMIT</button>
+                <button type="submit" class="btn btn-color" style="text-align:center" id="submit" onclick="return false;">SUBMIT</button>
             </div>
         </form>
 
