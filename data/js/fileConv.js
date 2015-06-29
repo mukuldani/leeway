@@ -1,4 +1,5 @@
-var resumeBase64 = null;
+var resumeBase64 = null,
+    type = null;
 
 function handleFileSelect(element){
     var fileObj = element.files[0];
@@ -7,4 +8,5 @@ function handleFileSelect(element){
         resumeBase64 = returnObj.target.result;
     };
     fileReader.readAsDataURL(fileObj);
+    type = document.getElementById('uploadfile').files[0].type
 }
