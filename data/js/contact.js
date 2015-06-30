@@ -1,6 +1,5 @@
 function contactForm() {
-    //var contactFormHost = 'http://reachus-leeway.herokuapp.com',
-    var contactFormHost = 'http://localhost:9292',
+    var contactFormHost = 'http://reachus-leeway.herokuapp.com',
         form = "",
         notice = $('#reachus_message'),
         sendingIndicator = $('#sndg-msg-rchus,#loading-indicator-rchus'),
