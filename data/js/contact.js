@@ -1,5 +1,6 @@
 function contactForm() {
-    var contactFormHost = 'http://reachus-leeway.herokuapp.com',
+    //var contactFormHost = 'http://reachus-leeway.herokuapp.com',
+    var contactFormHost = 'http://localhost:9292',
         form = "",
         notice = $('#reachus_message'),
         sendingIndicator = $('#sndg-msg-rchus,#loading-indicator-rchus'),
@@ -10,7 +11,7 @@ function contactForm() {
     if(str.match(/careers/gi)!==null){
         urlByPart = '/send_resume';
         form = $('#careers-leeway');
-        formData = form.serialize() + "&" + $.param({'Mime' : type}) + "&" + $.param({ 'fileData': resumeBase64 });
+        formData = form.serialize() + "&" + $.param({'Mime' : fileType}) + "&" + $.param({ 'fileName': fileName })+ "&" + $.param({ 'fileData': resumeBase64 });
     }
     else{
         urlByPart = '/send_email';
