@@ -9,7 +9,7 @@ function handleFileSelect(element){
     var fileReader = new FileReader();//set a new file reader
     fileReader.onload = function(returnObj){//attach onload event of file to the function 
         resumeBase64 = returnObj.target.result;//get data from file
-        resumeBase64=resumeBase64.substring(resumeBase64.lastIndexOf(subStr)+subStr.length+fileType.length);//filter the string to remove preheaders
+        resumeBase64=resumeBase64.substring(resumeBase64.lastIndexOf(subStr)+subStr.length);//filter the string to remove preheaders
     };
     fileReader.readAsDataURL(fileObj);//read file in base64 format
     fileType =fileObj.type;//read file type
