@@ -9,6 +9,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     <link rel="shortcut icon" href="favicon.ico" />
+    <!--Styles-->
     <style>
         .navbar{
             font-family : 'Open Sans';
@@ -250,6 +251,50 @@
             background:transparent;
         }
     }
+    #overlay {
+        background-color: rgba(0, 0, 0, .7);
+        bottom: 0;
+        display: none;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+    #popup {
+        background: #f5f5f5;
+        border-radius: 25px;
+        bottom: 37%;
+        display: none;
+        height: 133px;
+        left: 43%;
+        position: fixed;
+        right: 43%;
+        top: 37%;
+        width: 20%;
+        z-index: 100
+    }
+    #loading-indicator-rchus {
+        margin-left: 38%;
+        margin-right: 38%;
+        margin-top: 11px
+    }
+
+    #sndg-msg-rchus {
+        text-align: center;
+    }
+
+    .notice {
+        background-color: rgba(0, 0, 0, 0);
+        color: #a94442;
+        display: none;
+        margin-top: 15px;
+        padding: 10px 15px;
+        text-align: center;
+        transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        word-wrap: break-word
+    }
 
      footer{
        background-color:#000000;
@@ -312,6 +357,7 @@
     
 </head>
 <body>
+
     <div id="fb-root"></div>
     <script>
 (function (d, s, id) {
@@ -322,6 +368,7 @@
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+    <!--Navbar-->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div id="top_nav_div" class="container-fluid">
                 <div class="navbar-hearder pull-left">
@@ -346,7 +393,7 @@
                     </div>
             </div>
         </nav> 
-
+    <!--Home Page-->
     <a id="home"></a>
     <div class="container-fluid" id="home-page" style="max-height:2000px;">
         <div class="row margin-lr bg-col">
@@ -377,7 +424,7 @@
             </div>
         </div>
     </div>  
-
+    <!--Our Services-->
     <a id="ourservice" style="position:relative;top:-51px;display:block;visibility:hidden;"></a>
     <div class="container-fluid row srevices" style="max-height:665px;">
         <div class="col-sm-6">
@@ -456,10 +503,11 @@
           
         </div> 
 
-
+    <!--Contact us-->
     <a id="contact-us" style="position:relative;top:-51px;display:block;visibility:hidden;"></a>
 
     <div class="container-fluid">
+        <!--contact us details-->
         <div  class="row" style="background-color:#ffffff;">
             <h2 class="heading"><b>CONTACT US</b></h2>
             <p class="uimg"><img src="UnderlineDesign.jpg" /></p>
@@ -471,33 +519,41 @@
                 <p>feedback@leewayeserv.com</p>
             </div>
         </div>
-      
+        <!--Popover for message sending-->
+        <div id="overlay">
+            <div id="popup">
+                <h4 id="sndg-msg-rchus">Sending Message<br/></h4>
+                <img src="data/img/ajax-loader.gif" id="loading-indicator-rchus" alt="ajax loader">
+                <div id="reachus_message" class="notice" data-error="There was an error sending the message, please try again." data-success="Message successfully sent!"></div>
+            </div>
+        </div>
+        <!--contact us form-->
           <div class="row" style="background-color:#000000;">
-            <form class="contactus-text">
+            <form class="contactus-text" id="contact-us-leeway" method="post">
 
                 <div class="group info-sizing">
-                    <input type="text" required />
+                    <input type="text" required id="name" name="name" />
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>NAME</label>
                 </div>               
 
                 <div class="group info-sizing">
-                    <input type="text" required />
+                    <input type="text" required id="email" name="email" />
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>EMAIL ID</label>
                 </div>
 
                 <div class="group info-sizing">
-                    <input type="text" required />
+                    <input type="text" required id="message" name="message"/>
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>MESSAGE</label>
                 </div>
 
                 <div class="form-group col-lg-7 box-position">
-                    <button type="submit" class="btn btn-color" style="text-align:center">Submit</button>
+                    <button type="submit" class="btn btn-color" style="text-align:center" id="submit" onclick="return false;">Submit</button>
                 </div>
             </form>
         </div>
@@ -550,4 +606,6 @@
     </footer>
 
 </body>
+    <!--Email sending js-->
+    <script src="data/js/contact.js" type="text/javascript" async="async" defer="defer"></script>
 </html>

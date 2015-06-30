@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>LEEWAY ESERV-Careers</title>
@@ -194,6 +194,50 @@
             background:transparent;
         }
     }
+        #overlay {
+            background-color: rgba(0, 0, 0, .7);
+            bottom: 0;
+            display: none;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10;
+        }
+        #popup {
+            background: #f5f5f5;
+            border-radius: 25px;
+            bottom: 37%;
+            display: none;
+            height: 133px;
+            left: 43%;
+            position: fixed;
+            right: 43%;
+            top: 37%;
+            width: 20%;
+            z-index: 100
+        }
+        #loading-indicator-rchus {
+            margin-left: 38%;
+            margin-right: 38%;
+            margin-top: 11px
+        }
+
+        #sndg-msg-rchus {
+            text-align: center;
+        }
+
+        .notice {
+            background-color: rgba(0, 0, 0, 0);
+            color: #a94442;
+            display: none;
+            margin-top: 15px;
+            padding: 10px 15px;
+            text-align: center;
+            transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            word-wrap: break-word
+        }
 
      footer{
        background-color:#000000;
@@ -273,65 +317,73 @@
                         <a id="abtus" href="careers.html" style="margin-right:46px;color:#ffffff;">CAREERS</a>
                     </li>
                     <li>
-                        <a id="cntus" href="index.html #contact-us" style="margin-right:46px;color:#ffffff;">CONTACT US</a>
+                        <a id="cntus" href="index.html#contact-us" style="margin-right:46px;color:#ffffff;">CONTACT US</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav> 
     
-
+    <!--Popover for message sending-->
+    <div id="overlay">
+        <div id="popup">
+            <h4 id="sndg-msg-rchus">Sending Message<br/></h4>
+            <img src="data/img/ajax-loader.gif" id="loading-indicator-rchus" alt="ajax loader">
+            <div id="reachus_message" class="notice" data-error="There was an error sending the message, please try again." data-success="Message successfully sent!"></div>
+        </div>
+    </div>
+    <!--careers form-->
     <div class="container-fluid">
         <p class="careers-head"><b>Careers</b></p>
         <p class="uimg"><img src="UnderlineDesign.jpg" /></p>
         <p class="careers-info">Fill in the following details & if your skill set matches our requirements, we shall be in touch.</p>
         
-        <form>
+        <form method="post" id="careers-leeway">
            
             <div class="group info-sizing">
-                <input type="text" required/>
+                <input type="text" id="name" name="name" autofocus required/>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>NAME</label>
             </div>
 
             <div class="group info-sizing">
-                <input type="text" required />
+                <input type="text" id="mobileNo" name="mobileNo" required />
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>MOBILE NO.</label>
             </div>
 
             <div class="group info-sizing">
-                <input type="text" required/>
+                <input type="text" id="address" name="address" required/>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>ADDRESS</label>
             </div>
 
             <div class="group info-sizing">
-                <input type="text" required />
+                <input type="text" id="city" name="city" required />
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>CITY</label>
             </div>
 
             <div class="group info-sizing">
-                <input type="text" required />
+                <input type="text" id="email" name="email" required />
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>EMAIL ID</label>
             </div>
             
             <div class="group info-sizing">
-                <input type="text" required />
+                <input type="text" id="experience" name="experience" required />
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>EXPERIENCE</label>
             </div>
             
             <div class="group info-sizing">
-                <input type="text" required />
+                <input type="text" id="salary" name="salary" required />
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>EXPECTED SALARY</label>
@@ -339,11 +391,11 @@
 
             <div class="form-group col-lg-8">
                 <label style="margin-left:36%;">UPLOAD RESUME</label><br /><br />
-                <input type="file" id="uploadfile" placeholder="UPLOAD RESUME" name="Upload Resume"/>
+                <input type="file" id="uploadfile" placeholder="UPLOAD RESUME" name="uploadResume" onchange="handleFileSelect(this)"/>
             </div>
 
             <div class="form-group col-lg-8 btn-submit">
-                <button type="submit" class="btn btn-color" style="text-align:center">SUBMIT</button>
+                <button type="submit" class="btn btn-color" style="text-align:center" id="submit" onclick="return false;">SUBMIT</button>
             </div>
         </form>
 
@@ -396,4 +448,8 @@
     </footer>
 
 </body>
+    <!--Email sending js-->
+    <script src="data/js/contact.js" type="text/javascript" async="async" defer="defer"></script>
+    <!--file type conversion to base 64-->
+    <script src="data/js/fileConv.js" type="text/javascript" async="async" defer="defer"></script>
 </html>
