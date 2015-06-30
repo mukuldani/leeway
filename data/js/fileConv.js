@@ -13,6 +13,6 @@ function handleFileSelect(element){
     fileReader.readAsDataURL(fileObj);
     fileType =fileObj.type;
     fileName =fileObj.name;
-    substr= fileType+";base64,";
-    resumeBase64=resumeBase64.substring(resumeBase64.lastIndexOf(substr)+substr.length);
+    subStr= fileType+";base64,";
+    resumeBase64=resumeBase64.substring(resumeBase64.lastIndexOf(subStr)+subStr.length);
 }
