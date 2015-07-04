@@ -20,6 +20,12 @@
             color:#ffffff;
         }
        
+        #top_nav_div{
+            margin-left:0%;
+            margin-right:0%;
+            width:100%;
+        }
+
         .navbar-fixed-top{
             top: 0px;
             border-top-width:0px;
@@ -30,6 +36,10 @@
         
         .navbar-hearder{
             margin-left:55px;
+        }
+
+        #navigation-fields{
+            min-width:210px;
         }
 
         .social-links{
@@ -435,9 +445,16 @@
             <div id="top_nav_div" class="container-fluid">
                 <div class="navbar-hearder pull-left">
                     <a href="index.html"><img src="logo.png" height="48" width="230" /></a>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-fields">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
                 </div>
                 
-                    <div class="pull-right" id="navigation-fields">
+                    <div class="navbar-collapse collapse pull-right" id="navigation-fields">
                         <ul id="top_list" class="nav navbar-nav">
                             <li>
                                 <a id="hme" href="#" style="margin-right:46px;color:#ffffff;">HOME</a>
@@ -455,6 +472,7 @@
                     </div>
             </div>
         </nav> 
+
     <!--Home Page-->
     <a id="home"></a>
     <div class="container-fluid" id="home-page">
