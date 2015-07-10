@@ -610,28 +610,28 @@
 
 
 /*Your Industry- Health Administration BPO*/
-.insur-head{
-         font-family:'Open Sans';
+.health-head{
+             font-family:'Open Sans';
            font-size:25px;
            margin-left:12%;
            font-weight:600;
-    }
+         }
 
-    .insur-text{
-         font-family:'Open Sans';
+         .health-text{
+             font-family:'Open Sans';
            font-size:18px;
            margin-left:11%;
            margin-right:11%;
            text-align:justify;
-    }
+         }
 
-    .insur-subtext{
-         font-family:'Open Sans';
+         .health-subtext{
+             font-family:'Open Sans';
            font-size:18px;
            margin-left:13%;
            margin-right:13%;
            text-align:justify;
-    }
+         }
 
 
 /*Your Industry- Pharmacenticals*/
