@@ -863,4 +863,34 @@
         text-align:justify;
         }
 
+/*For mobile*/
+@media (max-width: 480px)
+{
+    #navigation-fields{
+        border:0px;
+        padding-left:86%;
+        background-color:#3F9A93;
+    }
+
+    #links-social{
+        top:74px;
+        margin-right:1px;
+    }
+
+    #banner-leeway{
+        top:18%;
+    }
+
+    #top-margin{
+        height:36%;
+    }
+
+    #divider-div-home{
+        height:14%;
+    }
+
+    #link-services{
+        margin-top:12%;
+    }
+}
 
