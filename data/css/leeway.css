@@ -804,7 +804,6 @@
         .ship-text{
              font-family:'Open Sans';
            font-size:18px;
-           line-height:34px;
            margin-left:11%;
            margin-right:11%;
         text-align:justify;
@@ -813,7 +812,6 @@
         .ship-points-text{
             font-family:'Open Sans';
            font-size:18px;
-           line-height:34px;
            margin-left:13%;
            margin-right:13%;
         text-align:justify;
@@ -831,7 +829,6 @@
         .travel-text{
             font-family:'Open Sans';
            font-size:18px;
-           line-height:34px;
            margin-left:11%;
            margin-right:11%;
         text-align:justify;
@@ -840,7 +837,6 @@
         .travel-pts{
             font-family:'Open Sans';
            font-size:18px;
-           line-height:34px;
            margin-left:13%;
            margin-right:13%;
         text-align:justify;
@@ -850,14 +846,12 @@
         .travel-table-pts{
              font-family:'Open Sans';
            font-size:18px;
-           line-height:34px;
            list-style-type:initial;
         }
 
         .travel-subtext{
             font-family:'Open Sans';
            font-size:18px;
-           line-height:34px;
            margin-left:13%;
            margin-right:11%;
         text-align:justify;
@@ -908,5 +902,214 @@
     .main-links{
         width:49%;
     }
+
+    .indy-head-yourIndy{
+        line-height:42px;
+    }
+
+    .news{
+        line-height:42px;
+    }
+
+    .services-text{
+        margin-left:0px;
+    }
+ 
+    .whyus-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+      
+    .pts-whyus{
+        margin-left:9%;
+    }
+
+    .about-sum-text1{
+        margin-left:16%;
+    }
+
+    .cust-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .cust-subtext{
+        margin-left:14%;
+    }
+
+    .cust-points{
+        margin-left:16%;
+        margin-right:16%;
+    }
+
+    .dir-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .dir-points{
+        margin-left:12%;
+        margin-right:12%;
+    }
+
+    .rural-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .rural-main-pts{
+        margin-left:6%;
+        margin-right:6%;
+    }
+
+    .rural-main-pts1{
+        margin-left:2%;
+        margin-right:1%;
+    }
+
+    .rural-main-pts2{
+        margin-left:2%;
+        margin-right:0%;
+    }
+
+    .mark-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .mark-points{
+        margin-left:9%;
+        margin-right:4%;
+    }
+
+    .busi-text{
+        margin-left:11%;
+        margin-right:9%;
+    }
+
+    .busi-points{
+        margin-left:9%;
+        margin-right:8%;
+    }
+
+    .busi-points1{
+        margin-left:8%;
+        margin-right:8%;
+    }
+
+    .bank-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .bank-subhead{
+        margin-left:9%;
+    }
+
+    .insur-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .insur-subtext{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .health-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .health-subtext{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .phar-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .manu-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .manu-subtext{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .manu-subtext2{
+        margin-left:0%;
+        margin-right:0%;
+    }
+
+    .media-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .media-subtext{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .media-subtext2{
+        margin-left:0%;
+        margin-right:0%;
+    }
+
+    .utlility-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .utlility-subtext{
+        margin-left:8%;
+        margin-right:6%;
+    }
+
+    .net-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .net-subtext{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .mark-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .market-subtext{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .ship-points-text{
+        margin-left:4%;
+        margin-right:9%;
+    }
+
+    .travel-text{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .travel-pts{
+        margin-left:6%;
+        margin-right:9%;
+    }
+
+    .travel-subtext{
+        margin-left:9%;
+    }
+
 }
+
 
