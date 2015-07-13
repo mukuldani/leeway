@@ -1,4 +1,4 @@
-﻿/*Navigation Bar*/
+﻿/*Navigation Bar*/  
 .navbar{
             font-family : 'Open Sans';
             background-color : #3F9A93;
@@ -857,7 +857,7 @@
         text-align:justify;
         }
 
-/*For mobile*/
+/*For mobile-Vertical*/
 @media (max-width: 480px)
 {
     #navigation-fields{
@@ -983,7 +983,7 @@
     }
 
     .busi-text{
-        margin-left:11%;
+        margin-left:9%;
         margin-right:9%;
     }
 
@@ -1081,12 +1081,17 @@
         margin-right:9%;
     }
 
-    .mark-text{
+    .market-text{
         margin-left:9%;
         margin-right:9%;
     }
 
     .market-subtext{
+        margin-left:9%;
+        margin-right:9%;
+    }
+
+    .ship-text{
         margin-left:9%;
         margin-right:9%;
     }
@@ -1112,4 +1117,365 @@
 
 }
 
+
+/*For mobile-Horizontal*/
+@media(max-height:210px){
+
+     .navbar{
+        height:36px;
+    }
+
+    #navigation-fields{
+        border:0px;
+        padding-left:83%;
+        padding-right:0%;
+        background-color:#3F9A93;
+    }
+
+    #home-page{
+        height:335px;
+    }
+
+    #links-social{
+        top:55px;
+        margin-right:2px;
+    }
+
+    #banner-leeway{
+        top:26%;
+        padding:0 0 8px 0;
+    }
+   
+    #name-logo{
+        font-size:47px;
+        letter-spacing:8px;
+        margin-left:2%;
+    }
+   
+    #text-logo{
+        font-size:14px;
+    }
+
+    #top-margin{
+        height:40%;
+    }
+
+    #top-links-1{
+        margin-left:1px;
+    }
+
+    #link-services{
+        margin-top:4%;
+        font-size:18px;
+    }
+
+   .whyus-text{
+       margin-left:3%;
+       margin-right:3%;
+       font-size:15px;
+       line-height:normal;
+   }
+
+   .pts-whyus{
+       line-height:normal;
+   }
+
+   .link-pts-whyus{
+       line-height:50px;
+   }
+
+   .indy-points-whyus{
+       font-size:17px;
+   }
+
+   .about-sum-text1{
+       margin-left:25%;
+   }
+
+   .about-sum-text2{
+       font-size:15px;
+       margin-left:4%;
+       margin-right:4%;
+   }
+
+   .cust-text{
+       margin-left:3%;
+       margin-right:3%;
+       line-height:normal;
+       font-size:15px;
+   }
+
+   .cust-subtext{
+       margin-left:7%;
+       font-size:15px;
+   }
+
+   .cust-points{
+       margin-left:10%;
+       margin-right:10%;
+       font-size:15px;
+   }
+
+   .dir-text{
+       margin-left:3%;
+       margin-right:3%;
+       line-height:normal;
+       font-size:15px;
+   }
+
+   .dir-points{
+            margin-left: 7%;
+            margin-right: 7%;
+            line-height: normal;
+            font-size: 15px;
+   }
+
+   .rural-text{
+       margin-left: 3%;
+    margin-right: 4%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .rural-main-pts{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .rural-main-pts1{
+       margin-left: 2%;
+    margin-right: 1%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .rural-main-pts1-text{
+       font-size:15px;
+   }
+
+   .rural-main-pts2{
+       margin-left: 2%;
+    margin-right: 0;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .manu-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .mark-points{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .busi-text{
+      margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .busi-points{
+       margin-left: 4%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .busi-points1{
+       margin-left: 4%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .link-yourIndy{
+       height:55px;
+   }
+
+   .indy-points-yourIndy{
+       font-size:18px;
+   }
+
+   .bank-text{
+       margin-left:3%;
+       margin-right:3%;
+       line-height:normal;
+       font-size:15px;
+   }
+
+   .bank-text2{
+       margin-left:3%;
+       margin-right:3%;
+       line-height:normal;
+       font-size:15px; 
+   }
+
+   .insur-text{
+       margin-left:3%;
+       margin-right:3%;
+       line-height:normal;
+       font-size:15px;
+   }
+
+   .insur-subtext{
+       margin-left:3%;
+       margin-right:3%;
+       line-height:normal;
+       font-size:15px;
+   }
+
+   .health-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .health-subtext{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .phar-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .manu-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .manu-subtext{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .manu-subtext2{
+       margin-left: 0px;
+    margin-right: 0px;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .media-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .media-subtext{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .media-subtext2{
+        margin-left: 0px;
+    margin-right: 0px;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .utlility-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .utlility-subtext{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .net-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .net-subtext{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .market-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .market-subtext{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .ship-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .ship-points-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .travel-text{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .travel-pts{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+   .travel-table-pts{
+       font-size:15px;
+   }
+
+   .travel-subtext{
+       margin-left: 3%;
+    margin-right: 3%;
+    line-height: normal;
+    font-size: 15px;
+   }
+
+}
 
