@@ -740,6 +740,7 @@
            margin-left:13%;
            margin-right:13%;
            text-align:justify;
+            line-height:30px;
     }
 
 
@@ -912,7 +913,10 @@
     }
 
     #text-content{
-        margin-left:0px;
+        margin-left:0;
+        margin-right:0;
+        line-height:normal;
+        font-size:1em;
     }
  
     .whyus-text{
@@ -946,197 +950,291 @@
     }
 
     .cust-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .cust-subtext{
-        margin-left:14%;
+        margin-left:6%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .cust-points{
-        margin-left:16%;
-        margin-right:16%;
+        margin-left:9%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .dir-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .dir-points{
-        margin-left:12%;
-        margin-right:12%;
+        margin-left:2%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .rural-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .rural-main-pts{
-        margin-left:6%;
-        margin-right:6%;
+        margin-left:2%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .rural-main-pts1{
         margin-left:2%;
         margin-right:1%;
+        line-height:normal;
+        font-size:1em;
+    }
+
+    .rural-main-pts1-text{
+        font-size:1em;
     }
 
     .rural-main-pts2{
         margin-left:2%;
         margin-right:0%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .mark-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .mark-points{
-        margin-left:9%;
-        margin-right:4%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .busi-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .busi-points{
-        margin-left:9%;
-        margin-right:8%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .busi-points1{
-        margin-left:8%;
-        margin-right:8%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .bank-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .bank-subhead{
-        margin-left:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
+    }
+
+    .bank-text2{
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .insur-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .insur-subtext{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .health-text{
-        margin-left:9%;
-        margin-right:9%;
+       margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .health-subtext{
-        margin-left:9%;
-        margin-right:9%;
+       margin-left:2%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .phar-text{
-        margin-left:9%;
-        margin-right:9%;
+       margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .manu-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .manu-subtext{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:2%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .manu-subtext2{
-        margin-left:0%;
-        margin-right:0%;
+        margin-left:0;
+        margin-right:0;
+        line-height:normal;
+        font-size:1em;
     }
 
     .media-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .media-subtext{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:2%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .media-subtext2{
-        margin-left:0%;
-        margin-right:0%;
+        margin-left:0;
+        margin-right:0;
+        line-height:normal;
+        font-size:1em;
     }
 
     .utlility-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .utlility-subtext{
-        margin-left:8%;
-        margin-right:6%;
+         margin-left:0;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .net-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .net-subtext{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:2%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .market-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .market-subtext{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:2%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .ship-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .ship-points-text{
-        margin-left:4%;
-        margin-right:9%;
+        margin-left:2%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .travel-text{
-        margin-left:9%;
-        margin-right:9%;
+        margin-left:3%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
     .travel-pts{
-        margin-left:6%;
-        margin-right:9%;
+        margin-left:2%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
+    }
+
+    .travel-table-pts{
+        font-size:1em;
     }
 
     .travel-subtext{
-        margin-left:9%;
+        margin-left:5%;
+        margin-right:3%;
+        line-height:normal;
+        font-size:1em;
     }
 
 }
 
 
 /*For mobile-Horizontal*/
-@media(max-height:210px){
+@media(max-width:610px){
 
      .navbar{
         height:36px;
