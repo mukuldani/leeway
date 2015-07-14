@@ -884,6 +884,10 @@
         height:14%;
     }
 
+    .leeway-img-width{
+        width:74%;
+    }
+
     #link-services{
         margin-top:12%;
     }
@@ -1234,45 +1238,37 @@
 
 
 /*For mobile-Horizontal*/
-@media(max-width:610px){
-
-     .navbar{
-        height:36px;
-    }
+@media(max-width:481) and (max-width:620){
 
     #navigation-fields{
         border:0px;
-        padding-left:83%;
+        padding-left:55%;
         padding-right:0%;
         background-color:#3F9A93;
     }
 
-    #home-page{
-        height:335px;
-    }
-
     #links-social{
-        top:55px;
-        margin-right:2px;
+        top:62px;
+        margin-right:1%;
     }
 
     #banner-leeway{
-        top:26%;
+        top:24%;
         padding:0 0 8px 0;
     }
    
     #name-logo{
-        font-size:47px;
-        letter-spacing:8px;
+        font-size:55px;
+        letter-spacing:10px;
         margin-left:2%;
     }
    
     #text-logo{
-        font-size:14px;
+        font-size:15px;
     }
 
     #top-margin{
-        height:40%;
+        height:46%;
     }
 
     #top-links-1{
@@ -1280,18 +1276,27 @@
     }
 
     #link-services{
-        margin-top:4%;
-        font-size:18px;
+        margin-right:16%;
+    }
+
+    .services-text{
+        margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
     }
 
    .whyus-text{
        margin-left:3%;
        margin-right:3%;
-       font-size:15px;
+       font-size:1em;
        line-height:normal;
    }
 
    .pts-whyus{
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
        line-height:normal;
    }
 
@@ -1300,63 +1305,73 @@
    }
 
    .indy-points-whyus{
-       font-size:17px;
+       font-size:20px;
    }
 
    .about-sum-text1{
-       margin-left:25%;
+       margin-left:34%;
+       font-size:1em;
+       line-height:normal;
+   }
+
+   .divider-div-whyus{
+       height:20px;
    }
 
    .about-sum-text2{
-       font-size:15px;
        margin-left:4%;
-       margin-right:4%;
+       margin-right:5%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .cust-text{
        margin-left:3%;
        margin-right:3%;
        line-height:normal;
-       font-size:15px;
+       font-size:1em;
    }
 
    .cust-subtext{
        margin-left:7%;
-       font-size:15px;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .cust-points{
-       margin-left:10%;
-       margin-right:10%;
-       font-size:15px;
+       margin-left:8%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .dir-text{
        margin-left:3%;
        margin-right:3%;
+       font-size:1em;
        line-height:normal;
-       font-size:15px;
    }
 
    .dir-points{
-            margin-left: 7%;
-            margin-right: 7%;
-            line-height: normal;
-            font-size: 15px;
+            margin-left:4%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .rural-text{
-       margin-left: 3%;
-    margin-right: 4%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .rural-main-pts{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .rural-main-pts1{
@@ -1367,35 +1382,38 @@
    }
 
    .rural-main-pts1-text{
-       font-size:15px;
+       margin-left:3%;
+       margin-right:0;
+       font-size:1em;
+       line-height:normal;
    }
 
    .rural-main-pts2{
-       margin-left: 2%;
-    margin-right: 0;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:0;
+       font-size:1em;
+       line-height:normal;
    }
 
    .manu-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .mark-points{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .busi-text{
-      margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:4%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .busi-points{
@@ -1406,190 +1424,194 @@
    }
 
    .busi-points1{
-       margin-left: 4%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:4%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .link-yourIndy{
-       height:55px;
+       height:50px;
    }
 
-   .indy-points-yourIndy{
-       font-size:18px;
-   }
-
+ 
    .bank-text{
+      margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
+   }
+
+   .bank-subhead{
        margin-left:3%;
        margin-right:3%;
+       font-size:1em;
        line-height:normal;
-       font-size:15px;
    }
 
    .bank-text2{
-       margin-left:3%;
+      margin-left:3%;
        margin-right:3%;
+       font-size:1em;
        line-height:normal;
-       font-size:15px; 
    }
 
    .insur-text{
        margin-left:3%;
        margin-right:3%;
+       font-size:1em;
        line-height:normal;
-       font-size:15px;
    }
 
    .insur-subtext{
-       margin-left:3%;
+      margin-left:3%;
        margin-right:3%;
+       font-size:1em;
        line-height:normal;
-       font-size:15px;
    }
 
    .health-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .health-subtext{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .phar-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .manu-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .manu-subtext{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .manu-subtext2{
-       margin-left: 0px;
-    margin-right: 0px;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:2%;
+       margin-right:0;
+       font-size:1em;
+       line-height:normal;
    }
 
    .media-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .media-subtext{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .media-subtext2{
-        margin-left: 0px;
-    margin-right: 0px;
-    line-height: normal;
-    font-size: 15px;
+        margin-left:2%;
+       margin-right:2%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .utlility-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .utlility-subtext{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .net-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .net-subtext{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .market-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .market-subtext{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .ship-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .ship-points-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:2%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .travel-text{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .travel-pts{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+       margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
    .travel-table-pts{
-       font-size:15px;
+       font-size:1em;
    }
 
    .travel-subtext{
-       margin-left: 3%;
-    margin-right: 3%;
-    line-height: normal;
-    font-size: 15px;
+      margin-left:3%;
+       margin-right:3%;
+       font-size:1em;
+       line-height:normal;
    }
 
 }
