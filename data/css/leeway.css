@@ -1238,7 +1238,7 @@
 
 
 /*For mobile-Horizontal*/
-@media(max-width:481) and (max-width:620){
+@media(min-width:481) and (max-width:620){
 
     #navigation-fields{
         border:0px;
